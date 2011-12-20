@@ -1,0 +1,11 @@
+<web-app>
+   <display-name>Cloudbees sample maven template app</display-name>
+   <servlet>
+       <servlet-name>App</servlet-name>
+       <servlet-class>bees.demo.App</servlet-class>
+   </servlet>
+   <servlet-mapping>
+       <servlet-name>App</servlet-name>
+       <url-pattern>/app</url-pattern>
+   </servlet-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+Cloudbees competition - needs Maven (3) and a JDK.
+
+To enter:
+
+1. Fork this project !
+2. git clone and run "mvn bees:run" on the command line - check it works on your machine http://localhost:8080
+3. Construct your masterpiece (or leave it as it is if you like) - the more creative the better.
+4. Signup to www.cloudbees.com - you will need your api keys to go any further
+5. run "mvn bees:deploy" (will ask for your keys - paste them in from your account Security keys page as asked) - also think up a page name.
+6. App will deploy - browse to <page name from step 6>.<your account name from step 4>.cloudbees.net
+7. Tweet to win ! The more RTs the better.

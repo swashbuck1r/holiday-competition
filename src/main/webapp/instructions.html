@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>LOLDOGS - by CloudBees</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body bgcolor="#06305a">
+<script language="javascript">
+    $(document).ready(function() {
+            if (document.URL.toString().indexOf("localhost") != -1) {
+                $('#message').html("Congratulations - running locally. Now deploy to cloudbees (mvn bees:deploy)");
+            }
+            var link = document.URL.replace("instructions.html", "");
+            $('.twitter-share-button').attr('data-url', link);
+        }
+    );
+</script>
+<div id="outerContainer">
+<div id="photoContainer">
+<h1><div id="message">Congratulations, you're almost done. Tweet to enter the contest.</div></h1>
+<div id="loldogz">
+    <h1>Even Cloud Dogz can haz...</h1>
+    <h1>Hello World.</h1>
+</div>
+</div><!-- end photoContainer --><div id="contentContainer">
+	<div id="center">
+    	<div id="tweetIcon">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.foo.com" data-text="Launched an app in the cloud on @CloudBees #PaaS – easy and fast. [Pls RT with #CloudBeesJava for $1 to charity]" data-lang="en" data-size="large" data-count="none">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+             <img src="images/tweet.gif" width="181" height="145" border="0"/>
+        </div><!-- end tweetIcon -->
+        <div id="tweetContainer">
+        <h2><a class="tweet" href="#" target="_blank">Tweet This</a></h2>
+        <p>And for every <strong>Retweet</strong> by a friend, CloudBees will donate $1 to the International Committee of the Red Cross. So ask your friends to share the love! <a href="https://github.com/cloudbees/competition"><strong>See Details</strong></a>. CloudBees is donating $5 for every app deployed, and entering each one to win an iPad 2!</p></div>
+        <!-- end tweetContainer -->
+        <div id="logoContainer"><a href="http://CloudBees.com/"><img src="images/logo.gif" alt="CloudBees - The Java PaaS Company" width="227" height="140" border="0" /></a></div><!-- end logoContainer -->
+	</div><!-- end center -->
+</div><!-- end contentContainer -->
+<div id="footerContainer"><a href="https://grandcentral.cloudbees.com/account/signup"><img src="images/btn_PaaS.gif" width="305" height="120" border="0" /></a></div><!-- end footerContainer -->
+</div><!-- end outerContainer -->
+
+
+
+
+
+</body>
+
+
+</html>
